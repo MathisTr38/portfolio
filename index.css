@@ -15,10 +15,10 @@ html { font-size: 62.5%; scroll-behavior: smooth; }
 body { font-size: 1.6rem; font-family: 'HK Grotesk', 'Segoe UI', sans-serif; color: var(--text-dark); background-color: var(--bg-light) !important; line-height: 1.6; }
 .row { max-width: var(--container-max-width); margin: 0 auto; padding: 0 2rem; }
 
-/* Header utilisant Montagne11.jpg en fond */
+/* Header avec fond sombre bien visible */
 .header {
   position: relative;
-  background: url('images/Montagne11.jpg') no-repeat center center / cover;
+  background: #0F172A url('images/Montagne11.jpg') no-repeat center center / cover;
   min-height: 85vh;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@ body { font-size: 1.6rem; font-family: 'HK Grotesk', 'Segoe UI', sans-serif; col
 .header__overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.35));
+  background: rgba(15, 23, 42, 0.75); /* Fond assombri pour lire parfaitement le texte blanc */
   z-index: 1;
 }
 
@@ -41,10 +41,10 @@ body { font-size: 1.6rem; font-family: 'HK Grotesk', 'Segoe UI', sans-serif; col
 .nav__link:hover { color: var(--racing-orange); }
 
 .header__text-box { margin-top: auto; margin-bottom: auto; }
-.heading-primary span { font-size: 5rem; font-weight: 800; display: block; margin-bottom: 1rem; }
+.heading-primary span { font-size: 5rem; font-weight: 800; display: block; margin-bottom: 1rem; color: #ffffff; }
 .header__subtitle { font-size: 2.2rem; margin-bottom: 3rem; color: #E2E8F0; }
 
-/* Boutons Orange Racing Pur */
+/* Boutons Orange Racing */
 .btn {
   display: inline-block;
   padding: 1.2rem 2.8rem;
