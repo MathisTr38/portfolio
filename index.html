@@ -1,35 +1,15 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 
-  <!-- Put your site title here -->
-  <title>
-    Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.
-  </title>
+  <title>Mathis TERRIER | Élève Ingénieur Mécanique & Énergétique</title>
 
-  <meta name="description" content="Add small description of yourslef.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <meta name="description" content="Portfolio de Mathis Terrier, élève ingénieur en Mécanique et Énergétique à l'INSA Hauts-de-France. À la recherche d'un stage de 4ème année.">
+  <meta name="keywords" content="Mathis Terrier, Ingénieur, Mécanique, Énergétique, INSA, CAO, SolidWorks, Catia, Eco Shell Marathon, Stage, Valenciennes" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -41,141 +21,239 @@
     <div class="row">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projets</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Expériences</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Formation & Compétences</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Syed Ali Hussnain</span>
+          <span>Mathis TERRIER</span>
         </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Web Developer based in Lahore, Pakistan.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <p>Élève Ingénieur en Mécanique & Énergétique — INSA Hauts-de-France</p>
+        <p style="font-size: 1.8rem; opacity: 0.9; margin-top: -1.5rem; margin-bottom: 3rem;">
+          À la recherche d'un stage d'élève ingénieur de 4<sup>ème</sup> année
+        </p>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="#contact" class="btn btn--pink">Me contacter</a>
+          <a href="./CV_FR_Mathis_Terrier.pdf" target="_blank" class="btn">Télécharger CV (FR)</a>
+          <a href="./CV_EN_Mathis_Terrier.pdf" target="_blank" class="btn">Télécharger CV (EN)</a>
+        </div>
       </div>
     </div>
   </header>
 
   <main role="main">
 
-    <!-- ***** Work ***** -->
+    <!-- ***** Projets ***** -->
 
     <section class="work" id="work">
       <div class="row">
-        <h2>My Work</h2>
+        <h2>Projets & Réalisations</h2>
         <div class="work__boxes">
 
-          <!-- Each div with the work__box class is a project. -->
-
+          <!-- Projet 1 -->
           <div class="work__box">
             <div class="work__text">
-              <h3>Portfolio Template</h3>
+              <h3>Eco Shell Marathon — Association Valmev</h3>
               <p>
-                A free Open Source Portfolio for anyone to use for free.
+                Conception et fabrication d'un prototype éco-efficient pour la compétition Shell Eco-marathon au sein de l'association étudiante Valmev.
               </p>
               <ul class="work__list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>JavaScript</li>
-                <li>Parcel</li>
+                <li>Conception CAO (SolidWorks & Catia) de la transmission et plans d'usinage</li>
+                <li>Création du circuit électrique & instrumentation moteur</li>
+                <li>Fabrication d'une coque aérodynamique en fibre de verre et carbone</li>
               </ul>
 
               <div class="work__links">
-                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                <a href="#contact" class="link__text">
+                  En savoir plus <span>&rarr;</span>
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+              <img src="./images/project-1.png" class="work__image" alt="Projet Eco Shell Marathon" />
             </div>
           </div>
 
+          <!-- Projet 2 -->
           <div class="work__box">
             <div class="work__text">
-              <h3>Calculator</h3>
+              <h3>Robot Tondeuse Autonome (SAE 70h)</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Développement d'un robot tondeuse autonome de A à Z dans le cadre d'un projet académique d'ingénierie en équipe.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Rédaction du cahier des charges fonctionnel et étude des contraintes</li>
+                <li>Rigueur et gestion d'équipe sur un volume de 70 heures</li>
+                <li>Développement logiciel & modélisation de solutions (Matlab)</li>
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                <a href="#contact" class="link__text">
+                  En savoir plus <span>&rarr;</span>
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+              <img src="./images/project-2.png" class="work__image" alt="Projet Robot Tondeuse" />
             </div>
           </div>
 
+          <!-- Projet 3 -->
           <div class="work__box">
             <div class="work__text">
-              <h3>Notificator</h3>
+              <h3>Configuration & Métrologie Piste — Acqua Rossa MotorSport</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
-                eius.
+                Configuration et préparation de véhicules de compétition pour l'optimisation des performances sur piste.
               </p>
               <ul class="work__list">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Node</li>
-                <li>MongoDB</li>
+                <li>Optimisation du comportement châssis et réglage des suspensions</li>
+                <li>Équilibrage des masses et abaissement du centre de gravité</li>
+                <li>Ajustement de la géométrie (pincement, ouverture, carrossage)</li>
+                <li>Réparation de carrosserie en matériau composite (fibre de verre)</li>
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                <a href="#contact" class="link__text">
+                  En savoir plus <span>&rarr;</span>
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+              <img src="./images/project-3.png" class="work__image" alt="Préparation Automobile" />
             </div>
           </div>
+
         </div>
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
+    <!-- ***** Expériences ***** -->
 
-    <section class="client" id="clients">
+    <section class="experience" id="experience">
       <div class="row">
-        <h2>Clients</h2>
-        <div class="client__logos">
-          <!-- Add logos of the clients or companies you'have worked with. -->
-          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
-          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
-          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
-          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
-          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
-          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        <h2>Expériences & Engagements</h2>
+        <div class="experience__grid">
+
+          <div class="experience__card">
+            <div class="experience__header">
+              <h3>Trésorier — Aumônerie des Étudiants de Valenciennes</h3>
+              <span class="experience__date">2025 – 2026</span>
+            </div>
+            <ul>
+              <li>Gestion et contrôle du budget annuel de l'association</li>
+              <li>Organisation d'activités et d'événements sous contraintes budgétaires</li>
+              <li>Communication interne et suivi comptable (Google Sheets)</li>
+            </ul>
+          </div>
+
+          <div class="experience__card">
+            <div class="experience__header">
+              <h3>Stage / CDD Ouvrier Agricole — Ferme La Lavardoune</h3>
+              <span class="experience__date">Étés 2023 à 2025 (1 mois / an)</span>
+            </div>
+            <ul>
+              <li>Surveillance, conduite et maintenance de machines agricoles</li>
+              <li>Gestion des commandes et livraisons clients</li>
+              <li>Travail en équipe et adaptation aux contraintes opérationnelles du terrain</li>
+            </ul>
+          </div>
+
+          <div class="experience__card">
+            <div class="experience__header">
+              <h3>Projet Humanitaire & Pèlerinage — Togo</h3>
+              <span class="experience__date">Juillet 2026 (3 semaines)</span>
+            </div>
+            <ul>
+              <li>Participation active à un projet caritatif communautaire local</li>
+              <li>Développement de l'adaptabilité, de l'ouverture d'esprit et du travail d'équipe</li>
+            </ul>
+          </div>
+
+          <div class="experience__card">
+            <div class="experience__header">
+              <h3>Stage Mécanique Auto — Acqua Rossa MotorSport</h3>
+              <span class="experience__date">Mai 2021</span>
+            </div>
+            <ul>
+              <li>Apprentissage de la mécanique automobile et entretien de précision</li>
+              <li>Réparation de carrosseries composites et configurations châssis</li>
+            </ul>
+          </div>
+
         </div>
+      </div>
+    </section>
+
+    <!-- ***** Formation & Compétences ***** -->
+
+    <section class="skills" id="skills">
+      <div class="row">
+        <h2>Formation & Compétences</h2>
+        
+        <div class="skills__columns">
+          <div class="skills__col">
+            <h3>Formation Académique</h3>
+            <div class="skills__item">
+              <h4>Diplôme d'Ingénieur — Mécanique & Énergétique</h4>
+              <p><strong>INSA Hauts-de-France</strong> | 2026 – 2029 (Diplôme prévu en 2029)</p>
+            </div>
+            <div class="skills__item">
+              <h4>Classe Préparatoire Intégrée</h4>
+              <p><strong>INSA Hauts-de-France</strong> | 2024 – 2026</p>
+              <p class="skills__sub">Sciences et Humanités pour l'Ingénieur</p>
+            </div>
+            <div class="skills__item">
+              <h4>Baccalauréat Général (Mention Bien)</h4>
+              <p><strong>Lycée Polyvalent Vaucanson (Grenoble)</strong> | Spécialités Mathématiques & Physique-Chimie</p>
+            </div>
+          </div>
+
+          <div class="skills__col">
+            <h3>Compétences Techniques</h3>
+            
+            <div class="skills__category">
+              <h4>Conception & CAO (CAD)</h4>
+              <div class="tags">
+                <span class="tag">SolidWorks</span>
+                <span class="tag">Catia</span>
+                <span class="tag">Modélisation de pièces</span>
+                <span class="tag">Assemblages</span>
+                <span class="tag">Mise en plan</span>
+                <span class="tag">Tolérancement géométrique</span>
+                <span class="tag">Plans d'usinage</span>
+              </div>
+            </div>
+
+            <div class="skills__category">
+              <h4>Logiciels & Outils</h4>
+              <div class="tags">
+                <span class="tag">Matlab (Automatisation)</span>
+                <span class="tag">Google Sheets (Comptabilité)</span>
+                <span class="tag">Prototypage & Usinage</span>
+                <span class="tag">Matériaux Composites</span>
+              </div>
+            </div>
+
+            <div class="skills__category">
+              <h4>Langues & Centres d'Intérêt</h4>
+              <div class="tags">
+                <span class="tag">Français (Natif)</span>
+                <span class="tag">Anglais (B1)</span>
+                <span class="tag">Espagnol (A2)</span>
+                <span class="tag">Sport Automobile</span>
+                <span class="tag">Voyages</span>
+                <span class="tag">Sports</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -183,23 +261,29 @@
 
     <section class="about" id="about">
       <div class="row">
-        <h2>About Me</h2>
+        <h2>À Propos de Moi</h2>
         <div class="about__content">
           <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
-              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
-              in vel, ex quam quidem quos mollitia labore aut sunt eius
-              ratione molestiae fuga veniam facere similique voluptate.
+              Élève ingénieur en Mécanique et Énergétique à l'INSA Hauts-de-France, je suis passionné par la conception technique, la mécanique de précision et l'innovation technologique.
             </p>
-            <!-- Provide a link to your resume -->
-            <a href="#" class="btn">My Resume</a>
+            <p>
+              Mon parcours allie solide socle théorique en classe préparatoire intégrée et réalisations pratiques concrètes : conception CAO sous SolidWorks et Catia, fabrication composite, préparation de véhicules de compétition et gestion de projet.
+            </p>
+            <p>
+              À la recherche d'un stage d'élève ingénieur de 4<sup>ème</sup> année, je suis motivé pour mettre ma rigueur, ma curiosité et mon sens du travail en équipe au service de projets industriels ou techniques stimulants.
+            </p>
+            
+            <div style="margin-top: 3rem; display: flex; gap: 1.5rem; flex-wrap: wrap;">
+              <a href="./CV_FR_Mathis_Terrier.pdf" target="_blank" class="btn">Voir CV (Français)</a>
+              <a href="./CV_EN_Mathis_Terrier.pdf" target="_blank" class="btn">Voir CV (English)</a>
+            </div>
           </div>
 
           <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+            <div class="about__avatar-placeholder">
+              <span>MT</span>
+            </div>
           </div>
         </div>
       </div>
@@ -210,18 +294,19 @@
 
   <section class="contact" id="contact">
     <div class="row">
-      <h2>Get in Touch</h2>
+      <h2>Me Contacter</h2>
       <div class="contact__info">
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
+          Vous avez une opportunité de stage de 4<sup>ème</sup> année en mécanique, énergétique ou ingénierie ? Vous souhaitez en savoir plus sur mes compétences et mes projets ? Contactez-moi directement :
         </p>
-        <!-- Replace the email with yours -->
-        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+        <div class="contact__details">
+          <p><strong>Email :</strong> <a href="mailto:Mathis.terrier11@gmail.com" class="link">Mathis.terrier11@gmail.com</a></p>
+          <p><strong>Téléphone :</strong> <a href="tel:+33648202261" class="link">+33 6 48 20 22 61</a></p>
+          <p><strong>Localisation :</strong> Valenciennes / Grenoble, France</p>
+        </div>
+        <div style="margin-top: 3rem;">
+          <a href="mailto:Mathis.terrier11@gmail.com" class="btn btn--pink">Envoyer un e-mail</a>
+        </div>
       </div>
     </div>
   </section>
@@ -230,45 +315,22 @@
 
   <footer role="contentinfo" class="footer">
     <div class="row">
-      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
         <li class="footer__social-link-item">
-          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
-            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
-            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          <a href="mailto:Mathis.terrier11@gmail.com" title="Envoyer un e-mail">
+            <img src="./images/heart.svg" class="footer__social-image" alt="Email">
           </a>
         </li>
       </ul>
 
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
       <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+        &copy; 2026 Mathis TERRIER — Portfolio Élève Ingénieur INSA Hauts-de-France.
       </p>
-      <div class="footer__github-buttons">
-        <iframe
-          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
-          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
-        </iframe>
-      </div>
     </div>
   </footer>
 
-  <a href="#top" class="back-to-top" title="Back to Top">
-    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  <a href="#top" class="back-to-top" title="Retour en haut">
+    <img src="./images/arrow-up.svg" alt="Retour en haut" class="back-to-top__image"/>
   </a>
   <script src="./index.js"></script>
 </body>
