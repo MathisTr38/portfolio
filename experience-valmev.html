@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <header class="header header--small">
+  <header class="header header--small" style="min-height: 40vh;">
     <div class="header__overlay"></div>
     <div class="row">
       <nav class="nav">
@@ -35,22 +35,19 @@
         <li><strong>Composites :</strong> Réalisation d'éléments de carrosserie en fibre de carbone et fibre de verre.</li>
       </ul>
 
-      <h3 class="margin-top">Plans CAO & Schémas (Affichage direct)</h3>
+      <h3 class="margin-top" style="margin-top: 3rem;">Plans d'usine & CAO (Affichage classique)</h3>
       <div class="gallery">
-        <img src="images/coupe_assemblage.png" alt="Coupe assemblage" class="gallery__img" />
-        <img src="images/assemblage.png" alt="Assemblage CAO" class="gallery__img" />
+        <div>
+          <img src="images/assemblage.png" alt="Assemblage CAO" class="gallery__img" />
+          <p style="text-align: center; margin-top: 0.8rem; font-size: 1.4rem; font-weight: 600;">Vue d'assemblage</p>
+        </div>
+        <div>
+          <img src="images/coupe_assemblage.png" alt="Coupe assemblage" class="gallery__img" />
+          <p style="text-align: center; margin-top: 0.8rem; font-size: 1.4rem; font-weight: 600;">Coupe d'assemblage</p>
+        </div>
       </div>
 
-      <h3 class="margin-top" style="margin-top: 3rem;">Documents Techniques PDF (Visualisation)</h3>
-      <div class="pdf-viewer-container">
-        <p><strong>Plan Volant Moteur :</strong></p>
-        <embed src="plan_Sortie_volant moteur.pdf" type="application/pdf" width="100%" height="450px" />
-        
-        <p style="margin-top: 2rem;"><strong>Couronne de Démarreur :</strong></p>
-        <embed src="20251127_couronne_démarreur.pdf" type="application/pdf" width="100%" height="450px" />
-      </div>
-
-      <h3 class="margin-top">Galerie Photos</h3>
+      <h3 class="margin-top" style="margin-top: 3rem;">Galerie Photos</h3>
       <div class="gallery">
         <img src="images/TransmissionIRL.jpg" alt="Transmission IRL" class="gallery__img" />
         <img src="images/Montagne1.jpg" alt="Montagne 1" class="gallery__img" />
