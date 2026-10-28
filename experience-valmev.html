@@ -9,6 +9,7 @@
 <body>
 
   <header class="header header--small">
+    <div class="header__overlay"></div>
     <div class="row">
       <nav class="nav">
         <ul class="nav__items">
@@ -34,18 +35,25 @@
         <li><strong>Composites :</strong> Réalisation d'éléments de carrosserie en fibre de carbone et fibre de verre.</li>
       </ul>
 
-      <h3 class="margin-top">Documents Techniques Associés (Plans CAO)</h3>
-      <div class="pdf-links">
-        <a href="plan_Sortie_volant moteur.pdf" target="_blank" class="btn btn--orange btn--doc">📄 Plan Volant Moteur (PDF)</a>
-        <a href="plan_usine_couvercle epicyclo_suport de roulement (1).pdf" target="_blank" class="btn btn--orange btn--doc">📄 Plan Couvercle Épicycloïdal (PDF)</a>
-        <a href="20251127_couronne_démarreur (1).pdf" target="_blank" class="btn btn--orange btn--doc">📄 Plan Couronne Démarreur (PDF)</a>
+      <h3 class="margin-top">Plans CAO & Schémas (Affichage direct)</h3>
+      <div class="gallery">
+        <img src="images/coupe_assemblage.png" alt="Coupe assemblage" class="gallery__img" />
+        <img src="images/assemblage.png" alt="Assemblage CAO" class="gallery__img" />
+      </div>
+
+      <h3 class="margin-top" style="margin-top: 3rem;">Documents Techniques PDF (Visualisation)</h3>
+      <div class="pdf-viewer-container">
+        <p><strong>Plan Volant Moteur :</strong></p>
+        <embed src="plan_Sortie_volant moteur.pdf" type="application/pdf" width="100%" height="450px" />
+        
+        <p style="margin-top: 2rem;"><strong>Couronne de Démarreur :</strong></p>
+        <embed src="20251127_couronne_démarreur.pdf" type="application/pdf" width="100%" height="450px" />
       </div>
 
       <h3 class="margin-top">Galerie Photos</h3>
       <div class="gallery">
-        <img src="images/PXL 20240827_180700555.jpg" alt="Transmission" class="gallery__img" />
-        <img src="images/PXL 20260227_120746031.jpg" alt="Vue montagne" class="gallery__img" />
-        <img src="images/PXL 20260618 13157100.jpg" alt="Atelier mécanique" class="gallery__img" />
+        <img src="images/TransmissionIRL.jpg" alt="Transmission IRL" class="gallery__img" />
+        <img src="images/Montagne1.jpg" alt="Montagne 1" class="gallery__img" />
       </div>
 
       <div style="margin-top: 40px; text-align: center;">
