@@ -191,18 +191,19 @@ section h2, .detail-content h2 { color: var(--text-dark); }
 .gallery--single { grid-template-columns: 1fr; }
 .gallery__item--portrait { width: 100%; max-width: 420px; justify-self: center; }
 
-/* ---------- Documents PDF ---------- */
-.detail-content .doc-list { list-style: none; padding-left: 0; max-width: none; display: grid; gap: 1rem; margin-top: 1.5rem; }
-.doc-list li { margin: 0; }
-.doc-list__link {
-  display: flex; align-items: center; gap: 1.4rem;
-  padding: 1.4rem 1.8rem; background: var(--bg-soft);
-  border: 1px solid var(--border-light); border-radius: 8px;
-  color: var(--text-dark); font-weight: 600; text-decoration: none;
-  transition: border-color 0.3s, background-color 0.3s;
+/* ---------- Galerie du robot : portrait au centre, 2 images de chaque côté ---------- */
+@media (min-width: 900px) {
+  .gallery--robot {
+    grid-template-columns: 1fr minmax(0, 0.85fr) 1fr;
+    grid-template-areas: "a p b" "c p d";
+    align-items: center;
+  }
+  .gallery--robot .robot-a { grid-area: a; }
+  .gallery--robot .robot-p { grid-area: p; }
+  .gallery--robot .robot-b { grid-area: b; }
+  .gallery--robot .robot-c { grid-area: c; }
+  .gallery--robot .robot-d { grid-area: d; }
 }
-.doc-list__link:hover, .doc-list__link:focus-visible { border-color: var(--racing-orange); background: #fff; }
-.doc-list__badge { flex-shrink: 0; background: var(--racing-orange-text); color: #fff; font-size: 1.2rem; font-weight: 800; padding: 0.4rem 0.8rem; border-radius: 4px; letter-spacing: 0.05em; }
 
 /* ---------- Footer & retour en haut ---------- */
 .footer { background: var(--dark); color: #CBD5E1; padding: 3rem 0; text-align: center; font-size: 1.5rem; }
