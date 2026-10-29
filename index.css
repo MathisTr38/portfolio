@@ -81,12 +81,20 @@ body { font-size: 1.6rem; font-family: 'HK Grotesk', 'Segoe UI', sans-serif; col
 .about__btns { margin-top: 2.5rem; display: flex; gap: 1.5rem; }
 
 .detail-page { padding: 6rem 0; background-color: #ffffff; }
-.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+.gallery { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 2rem; 
+  margin-top: 2rem; 
+}
+
 .gallery__img { 
   width: 100%; 
-  height: 250px; 
-  object-fit: contain; /* Empêche de couper les images et affiche tout le contenu */
-  background-color: #F8FAFC; /* Ajoute un fond propre et discret autour des plans */
+  height: auto;
+  max-height: 450px;
+  aspect-ratio: 4 / 3;        /* cases uniformes */
+  object-fit: contain;
+  background-color: #F8FAFC; 
   border-radius: 8px; 
   border: 1px solid var(--border-light);
   box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
