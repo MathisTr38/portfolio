@@ -4,27 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projet Transmission & Valmev - Mathis Terrier</title>
+  <meta name="description" content="Conception CAO de la transmission, plans d'usinage et composites du prototype Shell Eco-marathon de l'association Valmev (INSA Hauts-de-France)." />
+  <meta name="author" content="Mathis Terrier" />
+  <meta name="theme-color" content="#0F172A" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mathis TERRIER — Portfolio" />
+  <meta property="og:title" content="Projet Transmission & Valmev - Mathis Terrier" />
+  <meta property="og:description" content="Conception CAO de la transmission, plans d'usinage et composites du prototype Shell Eco-marathon de l'association Valmev (INSA Hauts-de-France)." />
+  <meta property="og:url" content="https://mathistr38.github.io/portfolio/experience-valmev.html" />
+  <meta property="og:image" content="https://mathistr38.github.io/portfolio/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projet Transmission & Valmev - Mathis Terrier" />
+  <meta name="twitter:description" content="Conception CAO de la transmission, plans d'usinage et composites du prototype Shell Eco-marathon de l'association Valmev (INSA Hauts-de-France)." />
+  <meta name="twitter:image" content="https://mathistr38.github.io/portfolio/images/og-image.jpg" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preload" href="fonts/HKGrotesk-Regular.woff" as="font" type="font/woff" crossorigin />
   <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
 </head>
 <body>
-
-  <header class="header header--small" style="min-height: 40vh;">
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+  <header class="header header--small" id="top">
     <div class="header__overlay"></div>
     <div class="row">
-      <nav class="nav">
+      <nav class="nav" aria-label="Navigation principale">
         <ul class="nav__items">
-          <li class="nav__item"><a href="index.html" class="nav__link">&larr; Retour au Portfolio</a></li>
+          <li class="nav__item"><a href="index.html#work" class="nav__link">Projets & Expériences</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">À propos</a></li>
+          <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="index_en.html" class="btn btn--lang" lang="en" hreflang="en" title="Read this site in English">EN <span aria-hidden="true">🌐</span></a>
+          </li>
         </ul>
       </nav>
     </div>
     <div class="header__text-box row">
       <h1 class="heading-primary"><span>Valmev & Transmission Shell Eco-Marathon</span></h1>
-      <p>Conception, instrumentation et usinage mécanique</p>
+      <p class="header__role">Conception, instrumentation et usinage mécanique</p>
     </div>
   </header>
 
-  <main class="row detail-page">
-    <section class="detail-content">
+  <main id="main" class="row detail-page">
+    <article class="detail-content">
       <h2>Description Approfondie du Projet</h2>
       <p>Au sein de l'association étudiante <strong>Valmev</strong> de l'INSA Hauts-de-France, j'ai participé activement à la création et au développement du prototype d'efficience énergétique.</p>
 
@@ -35,30 +63,51 @@
         <li><strong>Composites :</strong> Réalisation d'éléments de carrosserie en fibre de carbone et fibre de verre.</li>
       </ul>
 
-      <h3 class="margin-top" style="margin-top: 3rem;">Plans d'usine & CAO (Affichage classique)</h3>
+      <h3 class="section-gap">Plans d'usine & CAO</h3>
       <div class="gallery">
-        <div>
-          <img src="images/assemblage.png" alt="Assemblage CAO" class="gallery__img" />
-          <p style="text-align: center; margin-top: 0.8rem; font-size: 1.4rem; font-weight: 800;">Vue d'assemblage</p>
-        </div>
-        <div>
-          <img src="images/coupe_assemblage.png" alt="Coupe assemblage" class="gallery__img" />
-          <p style="text-align: center; margin-top: 0.8rem; font-size: 1.4rem; font-weight: 800;">Coupe d'assemblage</p>
-        </div>
-      </div>
-      <h3 class="margin-top" style="margin-top: 3rem;">Galerie Photos</h3>
-      <div class="gallery">
-        <img src="images/TransmissionIRL.jpg" alt="Transmission IRL" class="gallery__img" />
+        <figure class="gallery__item">
+          <a class="gallery__link" href="images/assemblage.png" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
+            <img src="images/assemblage.png" alt="Vue CAO en perspective de l'assemblage de la transmission du prototype Valmev" class="gallery__img" width="1246" height="771" loading="lazy" decoding="async" />
+          </a>
+          <figcaption class="gallery__caption">Vue d'assemblage</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <a class="gallery__link" href="images/coupe_assemblage.png" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
+            <img src="images/coupe_assemblage.png" alt="Vue CAO en coupe de l'assemblage de la transmission, montrant la vis, les roulements et les carters" class="gallery__img" width="1117" height="990" loading="lazy" decoding="async" />
+          </a>
+          <figcaption class="gallery__caption">Coupe d'assemblage</figcaption>
+        </figure>
       </div>
 
-      <div style="margin-top: 40px; text-align: center;">
+      <h3 class="section-gap">Galerie Photos</h3>
+      <div class="gallery gallery--single">
+        <figure class="gallery__item gallery__item--portrait">
+          <a class="gallery__link" href="images/TransmissionIRL.jpg" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
+            <img src="images/TransmissionIRL.jpg" alt="Photo de la transmission usinée montée sur le moteur : couronne dentée, flasques en aluminium et arbre de sortie avec pignon" class="gallery__img" width="900" height="1600" loading="lazy" decoding="async" />
+          </a>
+          <figcaption class="gallery__caption">Transmission réalisée, montée sur le moteur</figcaption>
+        </figure>
+      </div>
+
+      <h3 class="section-gap">Documents techniques (PDF)</h3>
+      <ul class="doc-list">
+        <li><a class="doc-list__link" href="documents/plan-couvercle-epicycloidal-support-roulement.pdf" target="_blank" rel="noopener"><span class="doc-list__badge" aria-hidden="true">PDF</span>Plan d'usinage — couvercle épicycloïdal &amp; support de roulement</a></li>
+        <li><a class="doc-list__link" href="documents/plan-sortie-volant-moteur.pdf" target="_blank" rel="noopener"><span class="doc-list__badge" aria-hidden="true">PDF</span>Plan d'usinage — sortie volant moteur</a></li>
+        <li><a class="doc-list__link" href="documents/plan-couronne-demarreur.pdf" target="_blank" rel="noopener"><span class="doc-list__badge" aria-hidden="true">PDF</span>Plan d'usinage — couronne de démarreur</a></li>
+      </ul>
+
+      <div class="detail-actions">
         <a href="index.html#work" class="btn btn--orange">&larr; Retour à la liste des projets</a>
       </div>
-    </section>
+    </article>
   </main>
 
   <footer class="footer">
-    <div class="row"><p>&copy; 2026 Mathis TERRIER | INSA Hauts-de-France</p></div>
+    <div class="row">
+      <p>&copy; 2026 Mathis TERRIER — Tous droits réservés | INSA Hauts-de-France</p>
+    </div>
   </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Retour en haut de page"><span aria-hidden="true">&uarr;</span></a>
 </body>
 </html>

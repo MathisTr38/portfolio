@@ -4,140 +4,168 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mathis TERRIER | Mechanical & Energy Engineering Student</title>
+  <meta name="description" content="Portfolio of Mathis Terrier, Mechanical & Energy Engineering student at INSA Hauts-de-France: Valmev Shell Eco-marathon prototype, autonomous lawn mower robot, motorsport internship. Seeking a 4th-year internship." />
+  <meta name="author" content="Mathis Terrier" />
+  <meta name="theme-color" content="#0F172A" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mathis TERRIER — Portfolio" />
+  <meta property="og:title" content="Mathis TERRIER | Mechanical & Energy Engineering Student" />
+  <meta property="og:description" content="Portfolio of Mathis Terrier, Mechanical & Energy Engineering student at INSA Hauts-de-France: Valmev Shell Eco-marathon prototype, autonomous lawn mower robot, motorsport internship. Seeking a 4th-year internship." />
+  <meta property="og:url" content="https://mathistr38.github.io/portfolio/index_en.html" />
+  <meta property="og:image" content="https://mathistr38.github.io/portfolio/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mathis TERRIER | Mechanical & Energy Engineering Student" />
+  <meta name="twitter:description" content="Portfolio of Mathis Terrier, Mechanical & Energy Engineering student at INSA Hauts-de-France: Valmev Shell Eco-marathon prototype, autonomous lawn mower robot, motorsport internship. Seeking a 4th-year internship." />
+  <meta name="twitter:image" content="https://mathistr38.github.io/portfolio/images/og-image.jpg" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="alternate" hreflang="fr" href="https://mathistr38.github.io/portfolio/index.html" />
+  <link rel="alternate" hreflang="en" href="https://mathistr38.github.io/portfolio/index_en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://mathistr38.github.io/portfolio/index.html" />
+  <link rel="preload" href="fonts/HKGrotesk-Regular.woff" as="font" type="font/woff" crossorigin />
   <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
 </head>
 <body>
-
-  <!-- ***** Header ***** -->
-  <header class="header" role="banner" id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="header" id="top">
     <div class="header__overlay"></div>
     <div class="row">
-      <nav class="nav" role="navigation">
+      <nav class="nav" aria-label="Main navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Projects & Experience</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="index_en.html#work" class="nav__link">Projects & Experience</a></li>
+          <li class="nav__item"><a href="index_en.html#about" class="nav__link">About me</a></li>
+          <li class="nav__item"><a href="index_en.html#contact" class="nav__link">Contact</a></li>
           <li class="nav__item">
-            <a href="index.html" class="btn btn--lang">FR 🌐</a>
+            <a href="index.html" class="btn btn--lang" lang="fr" hreflang="fr" title="Lire ce site en français">FR <span aria-hidden="true">🌐</span></a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="header__text-box row">
       <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Mathis TERRIER</span>
-        </h1>
-        <p>Mechanical & Energy Engineering Student — INSA Hauts-de-France</p>
+        <h1 class="heading-primary"><span>Mathis TERRIER</span></h1>
+        <p class="header__role">Mechanical & Energy Engineering Student — INSA Hauts-de-France</p>
         <p class="header__subtitle">Seeking a 4th-Year Engineering Internship in Mechanical & Thermal Systems</p>
         <a href="#work" class="btn btn--orange">Explore My Projects</a>
       </div>
     </div>
   </header>
 
-  <main role="main">
-    <section class="work" id="work">
+  <main id="main">
+
+    <section class="work" id="work" aria-labelledby="work-title">
       <div class="row">
-        <h2>Projects & Experiences</h2>
-        <p class="section-subtitle">Click on any project card to view technical documentation, photos, and drawings.</p>
+        <h2 id="work-title">Projects & Experiences</h2>
+        <p class="section-subtitle">Click on any card to view technical documentation, photos, and drawings.</p>
 
         <div class="work__boxes">
-
-          <!-- Valmev Project -->
-          <div class="work__box work__box--clickable" onclick="location.href='experience-valmev.html';">
+          <a class="work__box" href="experience-valmev.html" hreflang="fr" lang="fr">
+            <div class="work__image-box">
+              <img src="images/assemblage.png" alt="CAD perspective view of the Valmev prototype transmission assembly" class="work__image" width="1246" height="771" loading="lazy" decoding="async" />
+            </div>
             <div class="work__text">
               <h3>Valmev - Transmission & Shell Eco-Marathon Prototype</h3>
               <p>CAD transmission design, electrical powertrain instrumentation, machining plans, and carbon/fiberglass bodywork manufacturing.</p>
               <ul class="work__list">
-                <li>SolidWorks</li>
-                <li>CAD & Machining</li>
-                <li>Carbon Fiber</li>
-                <li>Powertrain</li>
+              <li>SolidWorks</li>
+              <li>CAD & Machining</li>
+              <li>Carbon Fiber</li>
+              <li>Powertrain</li>
               </ul>
-              <div class="work__links">
-                <span class="link__text">View Detailed Project &rarr;</span>
-              </div>
+              <span class="link__text">View Detailed Project (page in French) &rarr;</span>
             </div>
-            <div class="work__image-box">
-              <img src="gmail_images/PXL_20240827_180700555.jpg" class="work__image" alt="Valmev Transmission" />
-            </div>
-          </div>
+          </a>
 
-          <!-- Autonomous Lawn Mower -->
-          <div class="work__box work__box--clickable" onclick="location.href='experience-robot-tondeuse.html';">
+          <a class="work__box" href="experience-robot-tondeuse.html" hreflang="fr" lang="fr">
+            <div class="work__image-box">
+              <img src="images/Robot1.png" alt="CAD view of the autonomous lawn mower robot with its green body" class="work__image" width="918" height="606" loading="lazy" decoding="async" />
+            </div>
             <div class="work__text">
               <h3>Autonomous Robotic Lawn Mower (70h Project)</h3>
               <p>Full engineering development cycle from technical specifications to CAD modeling and formal report generation.</p>
               <ul class="work__list">
-                <li>Project Management</li>
-                <li>CAD / Matlab</li>
-                <li>Technical Report</li>
+              <li>Project Management</li>
+              <li>CAD / Matlab</li>
+              <li>Technical Report</li>
               </ul>
-              <div class="work__links">
-                <span class="link__text">View Report & Details &rarr;</span>
-              </div>
+              <span class="link__text">View Report & Details (page in French) &rarr;</span>
             </div>
-            <div class="work__image-box">
-              <img src="gmail_images/PXL_20260227_120752576.jpg" class="work__image" alt="Robotic Mower" />
-            </div>
-          </div>
+          </a>
 
-          <!-- Acqua Rossa Motorsport -->
-          <div class="work__box work__box--clickable" onclick="location.href='experience-acqua-rossa.html';">
+          <a class="work__box" href="experience-acqua-rossa.html" hreflang="fr" lang="fr">
+            <div class="work__image-box">
+              <img src="images/Montagne6.jpg" alt="" class="work__image" width="1600" height="1200" loading="lazy" decoding="async" />
+            </div>
             <div class="work__text">
               <h3>Automotive Mechanic Intern - Acqua Rossa MotorSport</h3>
               <p>Track chassis setup: suspension tuning, corner weight balancing, wheel alignment (camber/toe), and fiberglass splitter repair.</p>
               <ul class="work__list">
-                <li>Chassis Tuning</li>
-                <li>Suspension</li>
-                <li>Motorsport</li>
+              <li>Chassis Tuning</li>
+              <li>Suspension</li>
+              <li>Motorsport</li>
               </ul>
-              <div class="work__links">
-                <span class="link__text">Read Internship Details &rarr;</span>
-              </div>
+              <span class="link__text">Read Internship Details (page in French) &rarr;</span>
             </div>
-            <div class="work__image-box">
-              <img src="gmail_images/PXL_20260227_120809608~2.jpg" class="work__image" alt="Motorsport tuning" />
-            </div>
-          </div>
+          </a>
 
+          <a class="work__box" href="experience-ferme.html" hreflang="fr" lang="fr">
+            <div class="work__image-box">
+              <img src="images/Montagne3.jpg" alt="" class="work__image" width="1600" height="900" loading="lazy" decoding="async" />
+            </div>
+            <div class="work__text">
+              <h3>Farm Work - La Lavardoune</h3>
+              <p>Agricultural machinery maintenance, delivery and order management, and field teamwork.</p>
+              <ul class="work__list">
+              <li>Engine Maintenance</li>
+              <li>Organisation</li>
+              <li>Logistics</li>
+              </ul>
+              <span class="link__text">Learn more (page in French) &rarr;</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about" id="about" aria-labelledby="about-title">
       <div class="row">
-        <h2>About Me</h2>
+        <h2 id="about-title">About Me</h2>
         <div class="about__content">
           <div class="about__text">
             <p>
-              I am currently an engineering student specializing in <strong>Mechanical and Energy Engineering</strong> at <strong>INSA Hauts-de-France</strong>.
+              I am currently an engineering student specializing in <strong>Mechanical and Energy Engineering</strong> at <strong>INSA Hauts-de-France</strong> (Valenciennes).
             </p>
             <p>
               Passionate about motorsport engineering, vehicle dynamics, and CAD prototyping, I am looking for an engineering internship to apply my hands-on technical skills.
             </p>
-
             <div class="about__btns">
-              <a href="CV_EN_Mathis_Terrier.pdf" target="_blank" class="btn btn--orange">Download English Resume</a>
-              <a href="CV_FR_Mathis_Terrier.pdf" target="_blank" class="btn btn--outline">Download French Resume</a>
+              <a href="CV_EN_Mathis_Terrier.pdf" target="_blank" rel="noopener" class="btn btn--orange">Download English Resume</a>
+              <a href="CV_FR_Mathis_Terrier.pdf" target="_blank" rel="noopener" class="btn btn--outline" lang="fr">Download French Resume</a>
             </div>
           </div>
 
           <div class="about__photo-container">
-            <img class="about__photo" src="gmail_images/IMG-20241030-WA0024.jpg" alt="Mathis Terrier" />
+            <img class="about__photo" src="images/IMG-20241030-WA0024.jpg" alt="Portrait of Mathis Terrier" width="280" height="340" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="row">
-        <h2>Contact Me</h2>
+        <h2 id="contact-title">Contact Me</h2>
         <div class="contact__info">
           <p>Feel free to reach out regarding internship opportunities, technical projects, or inquiries.</p>
           <div class="contact__details">
-            <p><strong>Phone:</strong> +33 6 48 20 22 61</p>
-            <p><strong>Email:</strong> <a href="mailto:mathis.terrier11@gmail.com" class="link">mathis.terrier11@gmail.com</a></p>
+            <p><strong>Phone :</strong> <a href="tel:+33648202261" class="link">+33 6 48 20 22 61</a></p>
+            <p><strong>Email :</strong> <a href="mailto:mathis.terrier11@gmail.com" class="link">mathis.terrier11@gmail.com</a></p>
           </div>
           <a href="mailto:mathis.terrier11@gmail.com" class="btn btn--orange">Send an Email</a>
         </div>
@@ -147,8 +175,10 @@
 
   <footer class="footer">
     <div class="row">
-      <p>&copy; 2026 Mathis TERRIER — All Rights Reserved | INSA Hauts-de-France</p>
+      <p>&copy; 2026 Mathis TERRIER — All rights reserved | INSA Hauts-de-France</p>
     </div>
   </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Back to top"><span aria-hidden="true">&uarr;</span></a>
 </body>
 </html>

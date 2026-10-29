@@ -1,103 +1,252 @@
+/* ==========================================================================
+   Portfolio Mathis TERRIER — feuille de style unique
+   Identité : orange racing #FF5500 + fond sombre #0F172A
+   ========================================================================== */
+
+/* ---------- Police (jusque-là jamais chargée : aucun @font-face) ---------- */
+@font-face {
+  font-family: 'HK Grotesk';
+  src: url('fonts/HKGrotesk-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------- Variables ---------- */
 :root {
   --racing-orange: #FF5500;
   --racing-orange-hover: #E04800;
+  --racing-orange-text: #C2410C;      /* orange foncé pour le texte sur fond blanc (contraste AA) */
+  --dark: #0F172A;
   --bg-light: #F9F9FA;
+  --bg-soft: #F8FAFC;
   --bg-card: #FFFFFF;
   --text-dark: #1F2421;
   --text-muted: #555555;
   --border-light: #E2E8F0;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   --container-max-width: 1180px;
+  --radius: 12px;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { font-size: 62.5%; scroll-behavior: smooth; }
-body { font-size: 1.6rem; font-family: 'HK Grotesk', 'Segoe UI', sans-serif; color: var(--text-dark); background-color: var(--bg-light) !important; line-height: 1.6; }
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+html { font-size: 62.5%; scroll-behavior: smooth; scroll-padding-top: 2rem; -webkit-text-size-adjust: 100%; }
+body {
+  font-size: 1.6rem;
+  font-family: 'HK Grotesk', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+}
+img { max-width: 100%; height: auto; }
+a { color: var(--racing-orange-text); }
+h1, h2, h3 { line-height: 1.25; }
+
 .row { max-width: var(--container-max-width); margin: 0 auto; padding: 0 2rem; }
 
-/* Header avec fond sombre bien visible */
+/* ---------- Accessibilité ---------- */
+.skip-link {
+  position: absolute; left: 1rem; top: -6rem; z-index: 100;
+  background: var(--racing-orange); color: #fff; padding: 1rem 1.6rem;
+  border-radius: 0 0 6px 6px; font-weight: 700; text-decoration: none;
+}
+.skip-link:focus { top: 0; }
+:focus-visible { outline: 3px solid var(--racing-orange); outline-offset: 3px; }
+.header :focus-visible { outline-color: #fff; }
+
+/* ---------- Header (même bloc sur toutes les pages) ---------- */
 .header {
   position: relative;
-  background: #0F172A url('images/Montagne11.jpg') no-repeat center center / cover;
-  min-height: 85vh;
+  background: var(--dark) url('images/Montagne11.jpg') no-repeat center center / cover;
+  min-height: min(85vh, 780px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 3rem 0 6rem 0;
-  color: #ffffff;
+  color: #fff;
 }
-
-.header__overlay {
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(15, 23, 42, 0.75); /* Fond assombri pour lire parfaitement le texte blanc */
-  z-index: 1;
-}
-
+.header--small { min-height: 40vh; padding-bottom: 4rem; }
+.header__overlay { position: absolute; inset: 0; background: rgba(15, 23, 42, 0.75); z-index: 1; }
 .header .row { position: relative; z-index: 2; width: 100%; }
+
 .nav { display: flex; justify-content: flex-end; }
-.nav__items { display: flex; list-style: none; align-items: center; gap: 2.5rem; }
-.nav__link { color: #ffffff; text-decoration: none; font-weight: 600; font-size: 1.8rem; transition: color 0.3s; }
-.nav__link:hover { color: var(--racing-orange); }
+.nav__items { display: flex; flex-wrap: wrap; justify-content: flex-end; list-style: none; align-items: center; gap: 1rem 2.5rem; }
+.nav__link { color: #fff; text-decoration: none; font-weight: 600; font-size: 1.8rem; transition: color 0.3s; }
+.nav__link:hover, .nav__link:focus-visible { color: var(--racing-orange); }
 
-.header__text-box { margin-top: auto; margin-bottom: auto; }
-.heading-primary span { font-size: 5rem; font-weight: 800; display: block; margin-bottom: 1rem; color: #ffffff; }
-.header__subtitle { font-size: 2.2rem; margin-bottom: 3rem; color: #E2E8F0; }
+.header__text-box { margin-top: auto; margin-bottom: auto; padding-top: 4rem; }
+.heading-primary span {
+  display: block; margin-bottom: 1rem; color: #fff;
+  font-size: clamp(3.2rem, 7vw, 5.6rem); font-weight: 800; line-height: 1.1;
+}
+.header--small .heading-primary span { font-size: clamp(2.6rem, 5vw, 4.4rem); }
+.header__role { font-size: clamp(1.7rem, 2.4vw, 2rem); color: #fff; margin-bottom: 0.6rem; }
+.header__subtitle { font-size: clamp(1.7rem, 2.4vw, 2.2rem); margin-bottom: 3rem; color: #E2E8F0; max-width: 62rem; }
 
-/* Boutons Orange Racing */
+/* ---------- Boutons ---------- */
 .btn {
   display: inline-block;
   padding: 1.2rem 2.8rem;
   border-radius: 6px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 1.6rem;
+  line-height: 1.3;
+  text-align: center;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
   cursor: pointer;
-  border: none;
+  border: 2px solid transparent;
 }
-.btn--orange { background-color: #FF5500 !important; color: #ffffff !important; box-shadow: 0 4px 15px rgba(255, 85, 0, 0.3); }
-.btn--orange:hover { background-color: #E04800 !important; transform: translateY(-2px); }
-.btn--outline { border: 2px solid #FF5500; color: #FF5500; background: transparent; }
-.btn--outline:hover { background: #FF5500; color: #ffffff; }
-.btn--lang { background-color: rgba(255, 255, 255, 0.2); color: #fff; border: 1px solid rgba(255, 255, 255, 0.4); padding: 0.6rem 1.4rem; }
+.btn--orange { background-color: var(--racing-orange); color: #fff; box-shadow: 0 4px 15px rgba(255, 85, 0, 0.3); }
+.btn--orange:hover { background-color: var(--racing-orange-hover); transform: translateY(-2px); }
+.btn--outline { border-color: var(--racing-orange); color: var(--racing-orange-text); background: transparent; }
+.btn--outline:hover { background: var(--racing-orange); color: #fff; }
+.btn--lang { background-color: rgba(255, 255, 255, 0.2); color: #fff; border-color: rgba(255, 255, 255, 0.4); padding: 0.6rem 1.4rem; font-size: 1.5rem; }
+.btn--lang:hover { background-color: rgba(255, 255, 255, 0.35); }
 
-.work { padding: 8rem 0; background-color: #ffffff; }
-.work h2 { font-size: 3.6rem; margin-bottom: 1rem; text-align: center; color: var(--text-dark); }
-.section-subtitle { text-align: center; font-size: 1.8rem; color: var(--text-muted); margin-bottom: 5rem; }
-.work__boxes { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; }
-.work__box { background: var(--bg-card); border: 1px solid var(--border-light); border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; display: flex; flex-direction: column; }
-.work__box:hover { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(255, 85, 0, 0.15); border-color: var(--racing-orange); }
-.work__text { padding: 2.5rem; flex-grow: 1; }
+/* ---------- Sections ---------- */
+section h2, .detail-content h2 { color: var(--text-dark); }
+.work { padding: 8rem 0; background-color: #fff; }
+.work h2 { font-size: clamp(2.8rem, 5vw, 3.6rem); margin-bottom: 1rem; text-align: center; }
+.section-subtitle { text-align: center; font-size: 1.8rem; color: var(--text-muted); margin: 0 auto 5rem; max-width: 70rem; }
+
+/* ---------- Cartes projets (liens <a> : cliquables au clavier) ---------- */
+.work__boxes { display: grid; grid-template-columns: 1fr; gap: 3rem; }
+@media (min-width: 700px) { .work__boxes { grid-template-columns: repeat(2, 1fr); } }
+.work__box {
+  display: flex; flex-direction: column;
+  background: var(--bg-card); color: inherit; text-decoration: none;
+  border: 1px solid var(--border-light); border-radius: var(--radius); overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+.work__box:hover, .work__box:focus-visible { transform: translateY(-8px); box-shadow: 0 15px 35px rgba(255, 85, 0, 0.15); border-color: var(--racing-orange); }
+.work__image-box { aspect-ratio: 16 / 10; overflow: hidden; background: #E9EEF4; }
+.work__image { display: block; width: 100%; height: 100%; object-fit: cover; }
+.work__text { padding: 2.5rem; flex-grow: 1; display: flex; flex-direction: column; }
 .work__text h3 { font-size: 2.2rem; margin-bottom: 1rem; color: var(--text-dark); }
+.work__text p { color: var(--text-muted); }
 .work__list { display: flex; flex-wrap: wrap; gap: 0.8rem; list-style: none; margin: 1.5rem 0; }
 .work__list li { background: #F1F5F9; padding: 0.4rem 1rem; border-radius: 4px; font-size: 1.3rem; font-weight: 600; color: #475569; }
-.work__links .link__text { color: #FF5500; font-weight: 700; }
-.work__image-box img { width: 100%; height: 220px; object-fit: cover; }
+.link__text { margin-top: auto; color: var(--racing-orange-text); font-weight: 700; }
 
-.about { padding: 8rem 0; background: #F8FAFC; }
-.about__content { display: flex; align-items: center; gap: 5rem; }
-.about__photo { width: 280px; height: 340px; object-fit: cover; border-radius: 12px; box-shadow: var(--shadow); border: 4px solid #ffffff; }
-.about__btns { margin-top: 2.5rem; display: flex; gap: 1.5rem; }
+/* ---------- À propos ---------- */
+.about { padding: 8rem 0; background: var(--bg-soft); }
+.about h2, .contact h2 { font-size: clamp(2.8rem, 5vw, 3.6rem); margin-bottom: 3rem; }
+.about__content { display: flex; align-items: center; justify-content: space-between; gap: 5rem; }
+.about__text { max-width: 68ch; }
+.about__text p + p { margin-top: 1.4rem; }
+.about__photo-container { flex-shrink: 0; }
+.about__photo {
+  display: block; width: 280px; aspect-ratio: 14 / 17; object-fit: cover; object-position: center top;
+  border-radius: var(--radius); box-shadow: var(--shadow); border: 4px solid #fff;
+}
+.about__btns { margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 1.5rem; }
 
-.detail-page { padding: 6rem 0; background-color: #ffffff; }
-.gallery { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-  gap: 2rem; 
-  margin-top: 2rem; 
+/* ---------- Contact (n'avait aucun style) ---------- */
+.contact { padding: 8rem 0; background: #fff; text-align: center; }
+.contact__info { max-width: 64rem; margin: 0 auto; }
+.contact__details { margin: 2.5rem 0; padding: 2rem; background: var(--bg-soft); border: 1px solid var(--border-light); border-radius: var(--radius); }
+.contact__details p + p { margin-top: 0.6rem; }
+.contact__details a, .link { color: var(--racing-orange-text); font-weight: 700; word-break: break-word; }
+.link:hover { color: var(--racing-orange-hover); }
+
+/* ---------- Pages de détail ---------- */
+.detail-page { padding-top: 6rem; padding-bottom: 6rem; }
+.detail-content { background: #fff; }
+.detail-content h2 { font-size: clamp(2.6rem, 4vw, 3.2rem); margin-bottom: 1.6rem; }
+.detail-content h3 { font-size: 2.2rem; margin: 2.4rem 0 1rem; }
+.detail-content h3.section-gap { margin-top: 4.5rem; }
+.detail-content p { max-width: 75ch; line-height: 1.75; }
+.detail-content ul { padding-left: 2.4rem; max-width: 75ch; }
+.detail-content li { margin-bottom: 0.8rem; line-height: 1.7; }
+.detail-content .actions { margin-top: 1.5rem; }
+.detail-actions { margin-top: 5rem; text-align: center; }
+
+/* ---------- Galerie : image entière, sans déformation ---------- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 2.4rem;
+  align-items: start;                 /* chaque image garde sa hauteur naturelle */
+  margin-top: 2rem;
+}
+.gallery__item { margin: 0; min-width: 0; }
+.gallery__link {
+  display: block; overflow: hidden;
+  background: #F1F5F9;
+  border: 1px solid var(--border-light); border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.3s;
+}
+.gallery__link:hover { box-shadow: 0 8px 22px rgba(255, 85, 0, 0.2); }
+.gallery__img {
+  display: block; width: 100%; height: auto;   /* ratio fourni par width/height du HTML */
+  object-fit: contain;                          /* filet de sécurité : jamais rognée ni étirée */
+}
+.gallery__caption { margin-top: 0.8rem; text-align: center; font-size: 1.4rem; font-weight: 700; color: var(--text-muted); }
+.gallery--single { grid-template-columns: 1fr; }
+.gallery__item--portrait { width: 100%; max-width: 420px; justify-self: center; }
+
+/* ---------- Documents PDF ---------- */
+.detail-content .doc-list { list-style: none; padding-left: 0; max-width: none; display: grid; gap: 1rem; margin-top: 1.5rem; }
+.doc-list li { margin: 0; }
+.doc-list__link {
+  display: flex; align-items: center; gap: 1.4rem;
+  padding: 1.4rem 1.8rem; background: var(--bg-soft);
+  border: 1px solid var(--border-light); border-radius: 8px;
+  color: var(--text-dark); font-weight: 600; text-decoration: none;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+.doc-list__link:hover, .doc-list__link:focus-visible { border-color: var(--racing-orange); background: #fff; }
+.doc-list__badge { flex-shrink: 0; background: var(--racing-orange-text); color: #fff; font-size: 1.2rem; font-weight: 800; padding: 0.4rem 0.8rem; border-radius: 4px; letter-spacing: 0.05em; }
+
+/* ---------- Footer & retour en haut ---------- */
+.footer { background: var(--dark); color: #CBD5E1; padding: 3rem 0; text-align: center; font-size: 1.5rem; }
+
+.back-to-top {
+  position: fixed; right: 2rem; bottom: 2rem; z-index: 50;
+  width: 4.8rem; height: 4.8rem; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--racing-orange); color: #fff; font-size: 2.4rem; text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  visibility: hidden; opacity: 0; transform: scale(0);
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+}
+.back-to-top.is-visible { visibility: visible; opacity: 1; transform: scale(1); }
+.back-to-top:hover { background: var(--racing-orange-hover); }
+
+/* ==========================================================================
+   Responsive
+   ========================================================================== */
+@media (max-width: 900px) {
+  .work, .about, .contact { padding: 6rem 0; }
+  .about__content { flex-direction: column-reverse; align-items: flex-start; gap: 3rem; }
+  .about__text { max-width: none; }
+  .detail-page { padding-top: 4rem; padding-bottom: 4rem; }
 }
 
-.gallery__img { 
-  width: 100%; 
-  height: auto;
-  max-height: 450px;
-  aspect-ratio: 4 / 3;        /* cases uniformes */
-  object-fit: contain;
-  background-color: #F8FAFC; 
-  border-radius: 8px; 
-  border: 1px solid var(--border-light);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.06); 
+@media (max-width: 600px) {
+  .row { padding: 0 1.6rem; }
+  .header { padding: 2rem 0 4rem; min-height: 80vh; }
+  .header--small { min-height: 34vh; }
+  .nav { justify-content: flex-start; }
+  .nav__items { justify-content: flex-start; gap: 0.8rem 1.8rem; }
+  .nav__link { font-size: 1.6rem; }
+  .header__text-box { padding-top: 3rem; }
+  .btn { padding: 1.2rem 2rem; }
+  .about__btns .btn, .header__text .btn { width: 100%; }
+  .about__photo { width: min(100%, 280px); }
+  .work__text { padding: 2rem; }
+  .gallery { gap: 1.6rem; }
+  .back-to-top { right: 1.2rem; bottom: 1.2rem; }
 }
-.pdf-viewer-container { margin-top: 2rem; border: 1px solid var(--border-light); padding: 1.5rem; border-radius: 8px; background: #F8FAFC; }
-.footer { background: #0F172A; color: #94A3B8; padding: 3rem 0; text-align: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+  .work__box:hover, .work__box:focus-visible, .btn--orange:hover { transform: none; }
+}

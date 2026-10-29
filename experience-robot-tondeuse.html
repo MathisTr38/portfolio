@@ -4,27 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projet Robot Tondeuse Autonome - Mathis Terrier</title>
+  <meta name="description" content="Projet SAÉ de 70 h : conception d'un robot tondeuse autonome, du cahier des charges à la CAO (SolidWorks, Matlab) et au rapport technique." />
+  <meta name="author" content="Mathis Terrier" />
+  <meta name="theme-color" content="#0F172A" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mathis TERRIER — Portfolio" />
+  <meta property="og:title" content="Projet Robot Tondeuse Autonome - Mathis Terrier" />
+  <meta property="og:description" content="Projet SAÉ de 70 h : conception d'un robot tondeuse autonome, du cahier des charges à la CAO (SolidWorks, Matlab) et au rapport technique." />
+  <meta property="og:url" content="https://mathistr38.github.io/portfolio/experience-robot-tondeuse.html" />
+  <meta property="og:image" content="https://mathistr38.github.io/portfolio/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projet Robot Tondeuse Autonome - Mathis Terrier" />
+  <meta name="twitter:description" content="Projet SAÉ de 70 h : conception d'un robot tondeuse autonome, du cahier des charges à la CAO (SolidWorks, Matlab) et au rapport technique." />
+  <meta name="twitter:image" content="https://mathistr38.github.io/portfolio/images/og-image.jpg" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preload" href="fonts/HKGrotesk-Regular.woff" as="font" type="font/woff" crossorigin />
   <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
 </head>
 <body>
-
-  <header class="header header--small" style="min-height: 40vh;">
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+  <header class="header header--small" id="top">
     <div class="header__overlay"></div>
     <div class="row">
-      <nav class="nav">
+      <nav class="nav" aria-label="Navigation principale">
         <ul class="nav__items">
-          <li class="nav__item"><a href="index.html" class="nav__link">&larr; Retour au Portfolio</a></li>
+          <li class="nav__item"><a href="index.html#work" class="nav__link">Projets & Expériences</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">À propos</a></li>
+          <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="index_en.html" class="btn btn--lang" lang="en" hreflang="en" title="Read this site in English">EN <span aria-hidden="true">🌐</span></a>
+          </li>
         </ul>
       </nav>
     </div>
     <div class="header__text-box row">
       <h1 class="heading-primary"><span>Robot Tondeuse Autonome (SAÉ 70h)</span></h1>
-      <p>Conception d'un produit de zéro et gestion d'équipe pluridisciplinaire</p>
+      <p class="header__role">Conception d'un produit de zéro et gestion d'équipe pluridisciplinaire</p>
     </div>
   </header>
 
-  <main class="row detail-page">
-    <section class="detail-content">
+  <main id="main" class="row detail-page">
+    <article class="detail-content">
       <h2>Description du Projet</h2>
       <p>Projet académique intense de 70 heures en équipe visant à concevoir un robot tondeuse autonome de la feuille blanche au prototype fonctionnel.</p>
 
@@ -35,40 +63,52 @@
         <li><strong>CAO & Outils :</strong> Modélisation et dimensionnement sous SolidWorks et Matlab.</li>
       </ul>
 
-      <h3 class="margin-top" style="margin-top: 3rem;">Compte-rendu du Projet (Rapport)</h3>
-      <div style="margin-top: 1.5rem;">
-        <a href="Rapport.pdf" target="_blank" class="btn btn--orange">
-          📄 Télécharger / Consulter le Compte-rendu du Robot (PDF)
-        </a>
-      </div>
+      <h3 class="section-gap">Compte-rendu du Projet (Rapport)</h3>
+      <p class="actions">
+        <a href="documents/rapport-robot-tondeuse.pdf" target="_blank" rel="noopener" class="btn btn--orange">Télécharger / consulter le compte-rendu du robot (PDF)</a>
+      </p>
 
-      <h3 class="margin-top" style="margin-top: 3rem;">Galerie CAO du Robot</h3>
+      <h3 class="section-gap">Galerie CAO du Robot</h3>
       <div class="gallery">
-        <div>
-          <img src="images/Robot1.png" alt="Robot 1" class="gallery__img" />
-        </div>
-        <div>
-          <img src="images/Robot2.png" alt="Robot 2" class="gallery__img" />
-        </div>
-        <div>
-          <img src="images/Robot3.png" alt="Robot 3" class="gallery__img" />
-        </div>
-        <div>
-          <img src="images/Robot4.png" alt="Robot 4" class="gallery__img" />
-        </div>
-        <div>
-          <img src="images/Robot5.png" alt="Robot 5" class="gallery__img" />
-        </div>
+        <figure class="gallery__item">
+          <a class="gallery__link" href="images/Robot1.png" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
+            <img src="images/Robot1.png" alt="Vue CAO du robot tondeuse autonome avec son carénage vert" class="gallery__img" width="918" height="606" loading="lazy" decoding="async" />
+          </a>
+        </figure>
+        <figure class="gallery__item">
+          <a class="gallery__link" href="images/Robot2.png" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
+            <img src="images/Robot2.png" alt="Vue de dessus du châssis du robot tondeuse et de ses roues" class="gallery__img" width="579" height="795" loading="lazy" decoding="async" />
+          </a>
+        </figure>
+        <figure class="gallery__item">
+          <a class="gallery__link" href="images/Robot3.png" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
+            <img src="images/Robot3.png" alt="Vue CAO en perspective du châssis du robot : carte, mécanisme de transmission et roues" class="gallery__img" width="745" height="534" loading="lazy" decoding="async" />
+          </a>
+        </figure>
+        <figure class="gallery__item">
+          <a class="gallery__link" href="images/Robot4.png" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
+            <img src="images/Robot4.png" alt="Transmission par courroie entre deux poulies" class="gallery__img" width="703" height="559" loading="lazy" decoding="async" />
+          </a>
+        </figure>
+        <figure class="gallery__item">
+          <a class="gallery__link" href="images/Robot5.png" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
+            <img src="images/Robot5.png" alt="Motoréducteur rouge entraînant une roue crantée" class="gallery__img" width="612" height="576" loading="lazy" decoding="async" />
+          </a>
+        </figure>
       </div>
 
-      <div style="margin-top: 40px; text-align: center;">
+      <div class="detail-actions">
         <a href="index.html#work" class="btn btn--orange">&larr; Retour à la liste des projets</a>
       </div>
-    </section>
+    </article>
   </main>
 
   <footer class="footer">
-    <div class="row"><p>&copy; 2026 Mathis TERRIER | INSA Hauts-de-France</p></div>
+    <div class="row">
+      <p>&copy; 2026 Mathis TERRIER — Tous droits réservés | INSA Hauts-de-France</p>
+    </div>
   </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Retour en haut de page"><span aria-hidden="true">&uarr;</span></a>
 </body>
 </html>

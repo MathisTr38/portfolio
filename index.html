@@ -4,131 +4,138 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mathis TERRIER | Élève Ingénieur Mécanique & Énergétique</title>
+  <meta name="description" content="Portfolio de Mathis Terrier, élève ingénieur en Mécanique & Énergétique à l'INSA Hauts-de-France : projets Valmev (Shell Eco-marathon), robot tondeuse autonome, stage en sport automobile. Recherche un stage de 4e année." />
+  <meta name="author" content="Mathis Terrier" />
+  <meta name="theme-color" content="#0F172A" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mathis TERRIER — Portfolio" />
+  <meta property="og:title" content="Mathis TERRIER | Élève Ingénieur Mécanique & Énergétique" />
+  <meta property="og:description" content="Portfolio de Mathis Terrier, élève ingénieur en Mécanique & Énergétique à l'INSA Hauts-de-France : projets Valmev (Shell Eco-marathon), robot tondeuse autonome, stage en sport automobile. Recherche un stage de 4e année." />
+  <meta property="og:url" content="https://mathistr38.github.io/portfolio/index.html" />
+  <meta property="og:image" content="https://mathistr38.github.io/portfolio/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mathis TERRIER | Élève Ingénieur Mécanique & Énergétique" />
+  <meta name="twitter:description" content="Portfolio de Mathis Terrier, élève ingénieur en Mécanique & Énergétique à l'INSA Hauts-de-France : projets Valmev (Shell Eco-marathon), robot tondeuse autonome, stage en sport automobile. Recherche un stage de 4e année." />
+  <meta name="twitter:image" content="https://mathistr38.github.io/portfolio/images/og-image.jpg" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="alternate" hreflang="fr" href="https://mathistr38.github.io/portfolio/index.html" />
+  <link rel="alternate" hreflang="en" href="https://mathistr38.github.io/portfolio/index_en.html" />
+  <link rel="alternate" hreflang="x-default" href="https://mathistr38.github.io/portfolio/index.html" />
+  <link rel="preload" href="fonts/HKGrotesk-Regular.woff" as="font" type="font/woff" crossorigin />
   <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
 </head>
 <body>
-
-  <!-- ***** Header ***** -->
-  <header class="header" role="banner" id="top">
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+  <header class="header" id="top">
     <div class="header__overlay"></div>
     <div class="row">
-      <nav class="nav" role="navigation">
+      <nav class="nav" aria-label="Navigation principale">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Projets & Expériences</a></li>
-          <li class="nav__item"><a href="#about" class="nav__link">À Propos</a></li>
-          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item"><a href="index.html#work" class="nav__link">Projets & Expériences</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">À propos</a></li>
+          <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
           <li class="nav__item">
-            <a href="index_en.html" class="btn btn--lang">EN 🌐</a>
+            <a href="index_en.html" class="btn btn--lang" lang="en" hreflang="en" title="Read this site in English">EN <span aria-hidden="true">🌐</span></a>
           </li>
         </ul>
       </nav>
     </div>
     <div class="header__text-box row">
       <div class="header__text">
-        <h1 class="heading-primary">
-          <span>Mathis TERRIER</span>
-        </h1>
-        <p>Élève Ingénieur Mécanique & Énergétique — INSA Hauts-de-France</p>
+        <h1 class="heading-primary"><span>Mathis TERRIER</span></h1>
+        <p class="header__role">Élève Ingénieur Mécanique & Énergétique — INSA Hauts-de-France</p>
         <p class="header__subtitle">Recherche de stage de 4ème année en ingénierie mécanique et thermique</p>
         <a href="#work" class="btn btn--orange">Découvrir mes projets</a>
       </div>
     </div>
   </header>
 
-  <main role="main">
+  <main id="main">
 
-    <!-- ***** Expériences & Projets ***** -->
-    <section class="work" id="work">
+    <section class="work" id="work" aria-labelledby="work-title">
       <div class="row">
-        <h2>Mes Expériences & Projets</h2>
+        <h2 id="work-title">Mes Expériences & Projets</h2>
         <p class="section-subtitle">Cliquez sur une expérience pour afficher sa description détaillée, ses visuels et ses documents techniques.</p>
 
         <div class="work__boxes">
-
-          <!-- Projet 1: Valmev -->
-          <div class="work__box work__box--clickable" onclick="location.href='experience-valmev.html';">
+          <a class="work__box" href="experience-valmev.html">
+            <div class="work__image-box">
+              <img src="images/assemblage.png" alt="Vue CAO en perspective de l'assemblage de la transmission du prototype Valmev" class="work__image" width="1246" height="771" loading="lazy" decoding="async" />
+            </div>
             <div class="work__text">
               <h3>Valmev - Transmission & Prototype Shell Eco-Marathon</h3>
               <p>Conception CAO de la transmission, instrumentation moteur électrique, usinage et fabrication de la coque en carbone & fibre de verre.</p>
               <ul class="work__list">
-                <li>SolidWorks</li>
-                <li>CAO & Plans d'Usinage</li>
-                <li>Fibre de Carbone</li>
+              <li>SolidWorks</li>
+              <li>CAO & Plans d'Usinage</li>
+              <li>Fibre de Carbone</li>
               </ul>
-              <div class="work__links">
-                <span class="link__text">Voir le projet détaillé &rarr;</span>
-              </div>
+              <span class="link__text">Voir le projet détaillé &rarr;</span>
             </div>
-            <div class="work__image-box">
-              <img src="images/Montagne1.jpg" class="work__image" alt="Transmission Valmev" />
-            </div>
-          </div>
+          </a>
 
-          <!-- Projet 2: Robot Tondeuse -->
-          <div class="work__box work__box--clickable" onclick="location.href='experience-robot-tondeuse.html';">
+          <a class="work__box" href="experience-robot-tondeuse.html">
+            <div class="work__image-box">
+              <img src="images/Robot1.png" alt="Vue CAO du robot tondeuse autonome avec son carénage vert" class="work__image" width="918" height="606" loading="lazy" decoding="async" />
+            </div>
             <div class="work__text">
               <h3>Robot Tondeuse Autonome (Projet SAÉ 70h)</h3>
               <p>Conception de A à Z d'un robot tondeuse autonome, gestion du cahier des charges, modélisation mécanique et rapport complet.</p>
               <ul class="work__list">
-                <li>Gestion de Projet</li>
-                <li>CAO / Matlab</li>
-                <li>Rapport Technique</li>
+              <li>Gestion de Projet</li>
+              <li>CAO / Matlab</li>
+              <li>Rapport Technique</li>
               </ul>
-              <div class="work__links">
-                <span class="link__text">Consulter le rapport & la fiche &rarr;</span>
-              </div>
+              <span class="link__text">Consulter le rapport & la fiche &rarr;</span>
             </div>
-            <div class="work__image-box">
-              <img src="images/Montagne5.jpg" class="work__image" alt="Robot Tondeuse" />
-            </div>
-          </div>
+          </a>
 
-          <!-- Projet 3: Acqua Rossa -->
-          <div class="work__box work__box--clickable" onclick="location.href='experience-acqua-rossa.html';">
+          <a class="work__box" href="experience-acqua-rossa.html">
+            <div class="work__image-box">
+              <img src="images/Montagne6.jpg" alt="" class="work__image" width="1600" height="1200" loading="lazy" decoding="async" />
+            </div>
             <div class="work__text">
               <h3>Stage Mécanique Auto - Acqua Rossa MotorSport</h3>
               <p>Optimisation châssis pour la piste : suspensions, équilibrage des masses, réglage du carrossage/pincement et réparation fibre de verre.</p>
               <ul class="work__list">
-                <li>Liaison au Sol</li>
-                <li>Réglage Châssis</li>
-                <li>Sport Auto</li>
+              <li>Liaison au Sol</li>
+              <li>Réglage Châssis</li>
+              <li>Sport Auto</li>
               </ul>
-              <div class="work__links">
-                <span class="link__text">Voir les détails du stage &rarr;</span>
-              </div>
+              <span class="link__text">Voir les détails du stage &rarr;</span>
             </div>
-            <div class="work__image-box">
-              <img src="images/Montagne6.jpg" class="work__image" alt="Acqua Rossa MotorSport" />
-            </div>
-          </div>
+          </a>
 
-          <!-- Projet 4: La Lavardoune -->
-          <div class="work__box work__box--clickable" onclick="location.href='experience-ferme.html';">
+          <a class="work__box" href="experience-ferme.html">
+            <div class="work__image-box">
+              <img src="images/Montagne3.jpg" alt="" class="work__image" width="1600" height="900" loading="lazy" decoding="async" />
+            </div>
             <div class="work__text">
               <h3>Exploitation Agricole - La Lavardoune</h3>
               <p>Maintenance de machines agricoles, gestion opérationnelle des livraisons et travail d'équipe sur le terrain.</p>
               <ul class="work__list">
-                <li>Maintenance Moteur</li>
-                <li>Organisation</li>
-                <li>Logistique</li>
+              <li>Maintenance Moteur</li>
+              <li>Organisation</li>
+              <li>Logistique</li>
               </ul>
-              <div class="work__links">
-                <span class="link__text">En savoir plus &rarr;</span>
-              </div>
+              <span class="link__text">En savoir plus &rarr;</span>
             </div>
-            <div class="work__image-box">
-              <img src="images/Montagne3.jpg" class="work__image" alt="La Lavardoune" />
-            </div>
-          </div>
-
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ***** About ***** -->
-    <section class="about" id="about">
+    <section class="about" id="about" aria-labelledby="about-title">
       <div class="row">
-        <h2>À Propos de Moi</h2>
+        <h2 id="about-title">À Propos de Moi</h2>
         <div class="about__content">
           <div class="about__text">
             <p>
@@ -138,26 +145,25 @@
               Fort d'expériences en association de compétition d'efficience énergétique, en mécanique de précision et en gestion de projets académiques, je recherche un stage pour appliquer mes compétences techniques en ingénierie.
             </p>
             <div class="about__btns">
-              <a href="CV_FR_Mathis_Terrier.pdf" target="_blank" class="btn btn--orange">Télécharger mon CV (FR)</a>
-              <a href="CV_EN_Mathis_Terrier.pdf" target="_blank" class="btn btn--outline">Download CV (EN)</a>
+              <a href="CV_FR_Mathis_Terrier.pdf" target="_blank" rel="noopener" class="btn btn--orange">Télécharger mon CV (FR)</a>
+              <a href="CV_EN_Mathis_Terrier.pdf" target="_blank" rel="noopener" class="btn btn--outline" lang="en">Download CV (EN)</a>
             </div>
           </div>
 
           <div class="about__photo-container">
-            <img class="about__photo" src="images/IMG-20241030-WA0024.jpg" alt="Mathis Terrier" />
+            <img class="about__photo" src="images/IMG-20241030-WA0024.jpg" alt="Portrait de Mathis Terrier" width="280" height="340" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ***** Contact ***** -->
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" aria-labelledby="contact-title">
       <div class="row">
-        <h2>Me Contacter</h2>
+        <h2 id="contact-title">Me Contacter</h2>
         <div class="contact__info">
           <p>Vous souhaitez échanger sur une opportunité de stage, un projet d'ingénierie ou en savoir plus sur mon parcours ? N'hésitez pas à me contacter.</p>
           <div class="contact__details">
-            <p><strong>Téléphone :</strong> +33 6 48 20 22 61</p>
+            <p><strong>Téléphone :</strong> <a href="tel:+33648202261" class="link">+33 6 48 20 22 61</a></p>
             <p><strong>Email :</strong> <a href="mailto:mathis.terrier11@gmail.com" class="link">mathis.terrier11@gmail.com</a></p>
           </div>
           <a href="mailto:mathis.terrier11@gmail.com" class="btn btn--orange">Envoyer un Message</a>
@@ -171,5 +177,7 @@
       <p>&copy; 2026 Mathis TERRIER — Tous droits réservés | INSA Hauts-de-France</p>
     </div>
   </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Retour en haut de page"><span aria-hidden="true">&uarr;</span></a>
 </body>
 </html>

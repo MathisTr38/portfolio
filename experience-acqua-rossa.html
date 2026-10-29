@@ -4,27 +4,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stage Acqua Rossa MotorSport - Mathis Terrier</title>
+  <meta name="description" content="Stage de découverte en mécanique automobile chez Acqua Rossa MotorSport : réglage des suspensions, équilibrage des masses, géométrie et réparation composite." />
+  <meta name="author" content="Mathis Terrier" />
+  <meta name="theme-color" content="#0F172A" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mathis TERRIER — Portfolio" />
+  <meta property="og:title" content="Stage Acqua Rossa MotorSport - Mathis Terrier" />
+  <meta property="og:description" content="Stage de découverte en mécanique automobile chez Acqua Rossa MotorSport : réglage des suspensions, équilibrage des masses, géométrie et réparation composite." />
+  <meta property="og:url" content="https://mathistr38.github.io/portfolio/experience-acqua-rossa.html" />
+  <meta property="og:image" content="https://mathistr38.github.io/portfolio/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stage Acqua Rossa MotorSport - Mathis Terrier" />
+  <meta name="twitter:description" content="Stage de découverte en mécanique automobile chez Acqua Rossa MotorSport : réglage des suspensions, équilibrage des masses, géométrie et réparation composite." />
+  <meta name="twitter:image" content="https://mathistr38.github.io/portfolio/images/og-image.jpg" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preload" href="fonts/HKGrotesk-Regular.woff" as="font" type="font/woff" crossorigin />
   <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
 </head>
 <body>
-
-  <header class="header header--small" style="min-height: 40vh;">
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+  <header class="header header--small" id="top">
     <div class="header__overlay"></div>
     <div class="row">
-      <nav class="nav">
+      <nav class="nav" aria-label="Navigation principale">
         <ul class="nav__items">
-          <li class="nav__item"><a href="index.html" class="nav__link">&larr; Retour au Portfolio</a></li>
+          <li class="nav__item"><a href="index.html#work" class="nav__link">Projets & Expériences</a></li>
+          <li class="nav__item"><a href="index.html#about" class="nav__link">À propos</a></li>
+          <li class="nav__item"><a href="index.html#contact" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="index_en.html" class="btn btn--lang" lang="en" hreflang="en" title="Read this site in English">EN <span aria-hidden="true">🌐</span></a>
+          </li>
         </ul>
       </nav>
     </div>
     <div class="header__text-box row">
       <h1 class="heading-primary"><span>Acqua Rossa MotorSport</span></h1>
-      <p>Stage de découverte en mécanique automobile et optimisation châssis</p>
+      <p class="header__role">Stage de découverte en mécanique automobile et optimisation châssis</p>
     </div>
   </header>
 
-  <main class="row detail-page">
-    <section class="detail-content">
+  <main id="main" class="row detail-page">
+    <article class="detail-content">
       <h2>Détails du Stage</h2>
       <p>
         Immersion au sein de l'équipe de course <strong>Acqua Rossa MotorSport</strong> pour appréhender les fondamentaux de la mécanique automobile et la préparation de véhicules pour la piste.
@@ -38,20 +66,32 @@
         <li><strong>Maximisation du Grip :</strong> Ajustement géométrique des trains roulants (pincement, ouverture, carrossage).</li>
       </ul>
 
-      <h3 class="margin-top" style="margin-top: 3rem;">Galerie Photos</h3>
+      <h3 class="section-gap">Galerie Photos</h3>
       <div class="gallery">
-        <img src="images/Montagne6.jpg" alt="Préparation piste" class="gallery__img" />
-        <img src="images/Montagne7.jpg" alt="Environnement montagneux / essai" class="gallery__img" />
+        <figure class="gallery__item">
+          <a class="gallery__link" href="images/Montagne6.jpg" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
+            <img src="images/Montagne6.jpg" alt="Chaîne de montagnes enneigée sous un ciel bleu" class="gallery__img" width="1600" height="1200" loading="lazy" decoding="async" />
+          </a>
+        </figure>
+        <figure class="gallery__item">
+          <a class="gallery__link" href="images/Montagne7.jpg" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
+            <img src="images/Montagne7.jpg" alt="Falaise rocheuse dominant un versant enneigé" class="gallery__img" width="1600" height="1200" loading="lazy" decoding="async" />
+          </a>
+        </figure>
       </div>
 
-      <div style="margin-top: 40px; text-align: center;">
+      <div class="detail-actions">
         <a href="index.html#work" class="btn btn--orange">&larr; Retour à la liste des projets</a>
       </div>
-    </section>
+    </article>
   </main>
 
   <footer class="footer">
-    <div class="row"><p>&copy; 2026 Mathis TERRIER | INSA Hauts-de-France</p></div>
+    <div class="row">
+      <p>&copy; 2026 Mathis TERRIER — Tous droits réservés | INSA Hauts-de-France</p>
+    </div>
   </footer>
+
+  <a href="#top" class="back-to-top" aria-label="Retour en haut de page"><span aria-hidden="true">&uarr;</span></a>
 </body>
 </html>
