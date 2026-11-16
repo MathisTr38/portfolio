@@ -51,19 +51,25 @@
     </div>
   </header>
 
-  <main id="main" class="row detail-page">
+    <main id="main" class="row detail-page">
     <article class="detail-content">
-      <h2>Description Approfondie du Projet</h2>
-      <p>Au sein de l'association étudiante <strong>Valmev</strong> de l'INSA Hauts-de-France, j'ai participé activement à la création et au développement du prototype d'efficience énergétique.</p>
+      <h2>Description approfondie du projet</h2>
+      <p class="lead">Conception et fabrication de la transmission d'un prototype d'efficience énergétique, de la CAO SolidWorks jusqu'à la pièce usinée montée sur le moteur.</p>
+      <p>Au sein de l'association étudiante <strong>Valmev</strong> de l'INSA Hauts-de-France, j'ai participé à la création et au développement du prototype engagé dans le <strong>Shell Eco-marathon</strong>, une compétition où des équipes étudiantes conçoivent des véhicules capables de parcourir la plus grande distance avec le moins d'énergie possible. Dans ce contexte, chaque gramme et chaque perte mécanique comptent : la transmission doit être légère, précise et fiable.</p>
 
-      <h3>Missions & Réalisations :</h3>
+      <h3 class="section-gap">Missions &amp; réalisations</h3>
       <ul>
-        <li><strong>Conception CAO :</strong> Transmission mécanique sous SolidWorks et plans de fabrication normalisés.</li>
-        <li><strong>Usinage :</strong> Plans (couvercle épicycloïdal, couronne de démarreur, volant moteur).</li>
-        <li><strong>Composites :</strong> Réalisation d'éléments de carrosserie en fibre de carbone et fibre de verre.</li>
+        <li><strong>Conception CAO :</strong> modélisation de la chaîne de transmission sous SolidWorks, avec vérification de l'assemblage en vue éclatée et en coupe (vis, roulements, carters).</li>
+        <li><strong>Plans de fabrication :</strong> mise en plan normalisée de trois pièces (couvercle épicycloïdal et support de roulement, sortie de volant moteur, couronne de démarreur), avec cotation fonctionnelle et tolérances géométriques.</li>
+        <li><strong>Relation avec l'usineur :</strong> transmission des plans, échanges sur la faisabilité et suivi de la fabrication.</li>
+        <li><strong>Composites :</strong> drapage de fibre de carbone et de fibre de verre pour des éléments de carrosserie.</li>
       </ul>
 
-      <h3 class="section-gap">Plans d'usine & CAO</h3>
+      <h3 class="section-gap">De la CAO à la pièce usinée</h3>
+      <p>La démarche suit une chaîne simple : modéliser la transmission en 3D, contrôler en coupe que les pièces se logent et s'assemblent, puis traduire chaque pièce en plan que l'usineur peut produire sans ambiguïté. Un plan d'usinage doit donc dire non seulement quelles sont les dimensions, mais aussi avec quelle précision elles doivent être tenues, car un défaut de centrage ou de coaxialité se paie directement en frottements et en vibrations.</p>
+
+      <h3 class="section-gap">Plans d'usine &amp; CAO</h3>
+      <p>La vue d'assemblage donne l'architecture d'ensemble. La coupe met en évidence l'empilement des pièces autour de la vis, des roulements et des carters, ce qui a permis de contrôler les jeux et les appuis avant de lancer l'usinage.</p>
       <div class="gallery">
         <figure class="gallery__item">
           <a class="gallery__link" href="images/assemblage.png" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
@@ -79,7 +85,24 @@
         </figure>
       </div>
 
-      <h3 class="section-gap">Galerie Photos</h3>
+      <h3 class="section-gap">Les trois pièces usinées</h3>
+      <div class="table-wrap">
+        <table class="detail-table">
+          <thead><tr><th>Pièce</th><th>Caractéristiques principales</th><th>Exigences de précision</th></tr></thead>
+          <tbody>
+            <tr><td>Couvercle épicycloïdal &amp; support de roulement</td><td>Disque Ø100 mm, logement Ø84 mm, moyeu Ø52,8 mm, 8 trous M3</td><td>Position des 8 taraudages tenue à Ø0,01 mm par rapport à la référence A</td></tr>
+            <tr><td>Sortie volant moteur</td><td>Bride Ø96,8 mm à 6 trous Ø5, arbre étagé Ø25 et Ø15, bout fileté M10×0,5 avec rainure de clavette de 3 mm</td><td>Position des trous à Ø0,2 mm ; coaxialité du bout d'arbre à 0,05 mm</td></tr>
+            <tr><td>Couronne de démarreur</td><td>Couronne Ø131 mm, alésage Ø107 mm, 5 trous M5 répartis à 72°</td><td>Alésage ajusté H7 ; position des taraudages à Ø0,01 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout">
+        <p>Ces tolérances (ajustement H7, position, coaxialité) sont le cœur d'un plan d'usinage : elles garantissent que les pièces se centrent correctement sur le moteur et que l'ensemble tourne sans jeu ni balourd.</p>
+      </div>
+
+      <h3 class="section-gap">Galerie photos</h3>
+      <p>La transmission une fois usinée et montée sur le moteur : on distingue la couronne dentée, les flasques en aluminium et l'arbre de sortie équipé de son pignon.</p>
       <div class="gallery gallery--single">
         <figure class="gallery__item gallery__item--portrait">
           <a class="gallery__link" href="images/TransmissionIRL.jpg" target="_blank" rel="noopener" title="Ouvrir l'image en grand">
@@ -111,6 +134,9 @@
           <figcaption class="gallery__caption">Couronne de démarreur</figcaption>
         </figure>
       </div>
+
+      <h3 class="section-gap">Ce que ce projet m'a apporté</h3>
+      <p>Cette expérience m'a fait passer de la CAO « sur écran » à la contrainte réelle de fabrication : rendre une pièce usinable, choisir quelles tolérances sont vraiment utiles, dialoguer avec un professionnel de l'usinage et constater le résultat monté sur le prototype. Elle m'a aussi donné une première pratique des matériaux composites et du travail en association, avec des délais et des moyens limités.</p>
 
       <div class="detail-actions">
         <a href="index.html#work" class="btn btn--orange">&larr; Retour à la liste des projets</a>
